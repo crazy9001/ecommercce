@@ -1,0 +1,30 @@
+{
+  "name": "md-checkbox",
+  "description": "Material Design animated checkbox component.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/lukeed/md-checkbox",
+  "author": "Luke Edwards",
+  "keywords": [
+    "material design",
+    "md",
+    "checkbox",
+    "animated",
+    "sass",
+    "css3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "06e6e75d5df2610e5c20eb8caf42b4533359b7c6"
+  },
+  "_source": "https://github.com/lukeed/md-checkbox.git",
+  "_target": "^1.0.0",
+  "_originalSource": "md-checkbox"
+}

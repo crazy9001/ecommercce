@@ -1,0 +1,30 @@
+.view_website{
+    padding: 8px;
+}
+.view_website>a{
+    padding: 5px 20px !important;
+}.view_website>a>span{
+    font-size: 16px;padding: 0px 0px 0px 5px;
+}
+@media (max-width: 768px) {
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.select .custom{
+    width: 100%;
+}
+
+.select .select2-container{
+    z-index: 0 !important;
+}
+
+.middle, .table>tbody>tr>td.middle{
+    vertical-align: middle;
+}
+
+.move{
+    margin: 5px;
+}

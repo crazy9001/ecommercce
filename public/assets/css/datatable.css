@@ -1,0 +1,23 @@
+.dataTable_name{
+    width: 150px;
+}
+
+.dataTable_phone{
+    width: 80px;
+}
+
+.dataTable_email{
+    width: 150px;
+}
+
+.dataTable_date{
+    width: 70px;
+}
+
+.dataTable_action{
+    width: 200px;
+}
+
+.dataTable_action .btn-action{
+    margin: 0 5px;
+}
