@@ -9,7 +9,7 @@
 namespace App\Http\Controllers\Backend;
 
 
-class PostCategoryController
+class PostCategoryController extends CategoryController
 {
-
+    public $type = 'post';
 }

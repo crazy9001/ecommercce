@@ -183,6 +183,7 @@ return [
         UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
+        Spatie\Sitemap\SitemapServiceProvider::class,
     ],
 
     /*

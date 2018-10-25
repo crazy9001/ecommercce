@@ -28,12 +28,26 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    /* public function province(){
-         return $this->hasOne('App\Models\Province', 'id', 'province_id');
-     }
+    public function province()
+    {
+        return $this->hasOne('App\Models\Province', 'id', 'province_id');
+    }
 
-     public function district(){
-         return $this->hasOne('App\Models\District', 'id', 'district_id');
-     }*/
+    public function district()
+    {
+        return $this->hasOne('App\Models\District', 'id', 'district_id');
+    }
 
+    public static function dataTable()
+    {
+        $model = self::where('user_type', '=', 2)->select(['*']);
+        return DataTables::of($model)
+            ->addColumn('route_show', function ($user) {
+                return route('user.show', $user->id);
+            })
+            ->addColumn('route_delete', function ($user) {
+                return route('user.destroy', $user->id);
+            })
+            ->make(true);;
+    }
 }
