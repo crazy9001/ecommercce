@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/province', 'AddressController@getProvince')->name('api.province');
+
+Route::get('/province/distrist', 'AddressController@getDistrict')->name('api.district');
+
+Route::get('sizedisk', 'SizeDiskController@index')->name('api.sizedisk');
