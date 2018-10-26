@@ -7,13 +7,14 @@
     "require": {
         "php": ">=5.6.4",
         "barryvdh/laravel-debugbar": "^2.4",
+        "facuz/laravel-themes": "^3.1",
         "laravel/framework": "5.4.*",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.4",
+        "spatie/laravel-sitemap": "2.4",
         "unisharp/laravel-filemanager": "~2.0.0-alpha3",
-        "yajra/laravel-datatables-oracle": "~8.0",
-        "spatie/laravel-sitemap": "2.4"
+        "yajra/laravel-datatables-oracle": "~8.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

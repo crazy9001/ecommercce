@@ -184,6 +184,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
+        Facuz\Theme\ThemeServiceProvider::class,
     ],
 
     /*
@@ -238,6 +239,7 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+        'Theme' => Facuz\Theme\Facades\Theme::class,
     ],
 
 ];

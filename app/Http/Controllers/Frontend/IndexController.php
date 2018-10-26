@@ -8,14 +8,26 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
+use App\Models\Category;
+use App\Models\Content;
+use App\Models\Post;
+use App\Models\Product;
+use Facuz\Theme\Facades\Theme;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use App\Models\SEO;;
 
-class IndexController extends Controller
+class IndexController extends FrontendController
 {
     public function index(Request $request)
     {
-        dd(Auth::user());
+        if (config('setting.status') == 0) {
+            return abort(500);
+        }
+        $segments = $request->segments();
+
+        if (!count($segments)) {
+            return Theme::view('index');
+        }
+
     }
 }
