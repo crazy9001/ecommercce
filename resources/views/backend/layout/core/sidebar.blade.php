@@ -135,6 +135,10 @@
                         </a>
                     </li>
 
+                    <li class="<?= (route('widget.product_widget.index') == request()->url())?'active':'' ?>">
+                        <a href="{{route('widget.product_widget.index')}}"><i class="fa fa-circle-o"></i> Widget Sản phẩm</a>
+                    </li>
+
                 </ul>
             </li>
 

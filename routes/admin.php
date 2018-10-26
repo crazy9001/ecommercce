@@ -61,6 +61,15 @@ Route::resource('post', 'PostController');
 Route::get('page/datatable', 'PageController@dataTable')->name('page.datatable');
 Route::resource('page', 'PageController');
 
+// Route widget
+
+Route::prefix('widget')->namespace('Widget')->group(function () {
+
+    Route::get('product_widget/datatable', 'ProductWidgetController@dataTable')->name('widget.product_widget.datatable');
+
+    Route::resource('product_widget', 'ProductWidgetController', ['as' => 'widget']);
+
+});
 
 // Route setting
 Route::prefix('setting')->namespace('Setting')->group(function () {
