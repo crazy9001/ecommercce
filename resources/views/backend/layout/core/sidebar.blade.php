@@ -135,8 +135,20 @@
                         </a>
                     </li>
 
+                    <li class="<?= (route('menu.index', ['position'=>'footer']) == request()->fullUrl())?'active':'' ?>">
+                        <a href="{{route('menu.index', ['position'=>'footer'])}}"><i class="fa fa-circle-o"></i> Menu Footer</a>
+                    </li>
+                    <li><hr style="margin: 0 15px"></li>
                     <li class="<?= (route('widget.product_widget.index') == request()->url())?'active':'' ?>">
                         <a href="{{route('widget.product_widget.index')}}"><i class="fa fa-circle-o"></i> Widget Sản phẩm</a>
+                    </li>
+
+                    <li class="<?= (route('widget.most_view_product.index') == request()->url())?'active':'' ?>">
+                        <a href="{{route('widget.most_view_product.index')}}"><i class="fa fa-circle-o"></i> Widget Sản phẩm xem nhiều</a>
+                    </li>
+                    <li><hr style="margin: 0 15px"></li>
+                    <li class="<?= (route('widget.slider.index') == request()->url())?'active':'' ?>">
+                        <a href="{{route('widget.slider.index')}}"><i class="fa fa-circle-o"></i> Slider</a>
                     </li>
 
                 </ul>

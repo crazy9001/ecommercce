@@ -65,9 +65,21 @@ Route::resource('page', 'PageController');
 
 Route::prefix('widget')->namespace('Widget')->group(function () {
 
+    //Slide
+    Route::get('slider/datatable', 'SliderController@dataTable')->name('widget.slider.datatable');
+
+    Route::resource('slider', 'SliderController', ['as' => 'widget']);
+
+
+    // widget product
     Route::get('product_widget/datatable', 'ProductWidgetController@dataTable')->name('widget.product_widget.datatable');
 
     Route::resource('product_widget', 'ProductWidgetController', ['as' => 'widget']);
+
+    // widget most view product
+    Route::get('most_view_product/datatable', 'MostViewProductWidgetController@dataTable')->name('widget.most_view_product.datatable');
+
+    Route::resource('most_view_product', 'MostViewProductWidgetController', ['as' => 'widget']);
 
 });
 
